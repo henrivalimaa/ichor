@@ -1,0 +1,40 @@
+<div class="dashboard">
+	<div class="dashboard-tabs">
+		<div class="dashboard-tab">
+			<button ng-click="$ctrl.state = 'components'">
+				<i class="fa fa-server"></i>
+			</button>
+		</div>
+		<div class="dashboard-tab">
+			<button ng-click="$ctrl.state = 'analytics'">
+				<i class="fa fa-pie-chart"></i>
+			</button>
+		</div>
+		<div class="dashboard-tab">
+			<button ng-click="$ctrl.state = 'settings'">
+				<i class="fa fa-cog"></i>
+			</button>
+		</div>
+	</div>
+
+	<div ng-if="$ctrl.state === 'components'" class="components">
+		<div class="text-center view-title">
+			<h1>Components</h1>
+			<small>Coming soon...</small>
+		</div>
+	</div>
+
+	<div ng-if="$ctrl.state === 'analytics'" class="analytics">
+		<div class="text-center view-title">
+			<h1>Analytics</h1>
+			<small>Coming soon...</small>
+		</div>
+	</div>
+
+	<div ng-if="$ctrl.state === 'settings'" class="settings">
+		<div class="text-center view-title">
+			<h1>Settings</h1>
+			<small>Coming soon...</small>
+		</div>
+	</div>
+</div>
